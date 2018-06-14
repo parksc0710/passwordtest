@@ -43,8 +43,8 @@ public class PasswordTestMain {
 		
 		
 		// match
-		bcpeMatch = bcpe.matches(rawPassword, bcpeEncodedPw);
-		md5peMatch = md5pe.isPasswordValid(md5peEncodedPw, rawPassword, name);
+		bcpeMatch = bcpe.matches("1234", bcpeEncodedPw);
+		md5peMatch = md5pe.isPasswordValid("12345", rawPassword, name);
 		
 		System.out.println("bcpeMatch : " + bcpeMatch);
 		System.out.println("md5peMatch : " + md5peMatch);
